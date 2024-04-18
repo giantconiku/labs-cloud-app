@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.slf4j.LoggerFactory;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -26,7 +26,7 @@ import java.util.Optional;
 @RequestMapping("/api/authors")
 public class AuthorRestController {
 
-    Logger logger = LoggerFactory.getLogger(AuthorRestController.class);
+    Logger logger = LogManager.getLogger(AuthorRestController.class);
 
     @Autowired
     private AuthorRepository repository;
