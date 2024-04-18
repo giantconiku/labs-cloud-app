@@ -23,6 +23,3 @@ target
 /dist/
 /nbdist/
 /.nb-gradle/
-
-### Database Credentials ###
-src/main/resources/secret.properties
