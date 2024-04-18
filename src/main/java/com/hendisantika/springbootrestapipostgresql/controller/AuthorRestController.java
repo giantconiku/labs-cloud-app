@@ -26,7 +26,7 @@ import java.util.Optional;
 @RequestMapping("/api/authors")
 public class AuthorRestController {
 
-    Logger logger = LogManager.getLogger(AuthorRestController.class);
+     Logger logger = LogManager.getLogger(AuthorRestController.class);
 
     @Autowired
     private AuthorRepository repository;
